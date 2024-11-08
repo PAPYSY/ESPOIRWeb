@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPOIR - Boutique Solidaire</title>
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="src/logo.jpg" alt="ESPOIR Logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="shop.html">Boutique</a>
+                <a href="news.html">Actualités</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="hero-content">
+                <h1>Notre Boutique Solidaire</h1>
+                <p>Découvrez nos produits artisanaux et soutenez nos projets</p>
+            </div>
+        </section>
+
+        <section class="shop-filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">Toutes les catégories</option>
+                        <option value="artisanat">Artisanat</option>
+                        <option value="bijoux">Bijoux</option>
+                        <option value="accessoires">Accessoires</option>
+                    </select>
+
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">Tous les prix</option>
+                        <option value="range1">0 - 2000fr</option>
+                        <option value="range2">2000 - 5000fr</option>
+                        <option value="range3">5000fr et plus</option>
+                    </select>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Rechercher un produit..." id="searchInput">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-products">
+            <div class="container">
+                <div id="productsGrid" class="products-grid">
+                    <!-- Products will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <div id="cartPreview" class="cart-preview">
+            <h3>Panier</h3>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be inserted here -->
+            </div>
+            <div class="cart-total">
+                Total: <span id="cartTotal">0 fr</span>
+            </div>
+            <button id="checkoutBtn" class="btn btn-primary checkout-btn">Commander</button>
+        </div>
+
+        <!-- Modal de commande -->
+        <div id="checkoutModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Finaliser la commande</h2>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="customerName">Nom complet</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Téléphone</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Valider la commande</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ESPOIR</h3>
+                <p>Ensemble pour la Solidarité, la Promotion, et l'Opportunité des Initiatives de la Relève</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="shop.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: contact@espoir.org</li>
+                    <li>Téléphone: +123 456 789</li>
+                    <li>Adresse: 123 Rue de l'Espoir</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Ajouter ceci juste avant la fermeture du body -->
+<script src="scripts/data.js"></script>
+<script src="scripts/shop.js"></script>
+</body>
+</html>

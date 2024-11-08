@@ -1,0 +1,49 @@
+<!-- partners.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Partenaires - ESPOIR</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/partners.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Same header as shop.html -->
+    </header>
+
+    <main>
+        <section class="partners-hero">
+            <div class="container">
+                <h1>Nos Partenaires</h1>
+                <p>Découvrez les acteurs qui soutiennent notre mission</p>
+            </div>
+        </section>
+
+        <section class="partners-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="btn btn-primary active" data-type="all">Tous</button>
+                    <button class="btn btn-primary" data-type="fournisseur">Fournisseurs</button>
+                    <button class="btn btn-primary" data-type="distributeur">Distributeurs</button>
+                    <button class="btn btn-primary" data-type="artisan">Artisans</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-grid">
+            <div class="container">
+                <div id="partnersGrid" class="partners-cards"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer content here -->
+    </footer>
+
+    <script src="js/db-connection.js"></script>
+    <script src="js/partners.js"></script>
+</body>
+</html>

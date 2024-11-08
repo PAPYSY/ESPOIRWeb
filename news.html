@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - ESPOIR</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/news.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="src/logo.jpg" alt="ESPOIR Logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="shop.html">Boutique</a>
+                <a href="news.html">Actualités</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="news-hero">
+            <div class="hero-content">
+                <h1>Actualités</h1>
+                <p>Restez informé des dernières nouvelles et événements d'ESPOIR</p>
+            </div>
+        </section>
+
+        <section class="news-filters">
+            <div class="container">
+                <div class="search-bar">
+                    <input type="text" id="news-search" placeholder="Rechercher des articles...">
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Tous</button>
+                    <button class="filter-btn" data-category="evenements">Événements</button>
+                    <button class="filter-btn" data-category="projets">Projets</button>
+                    <button class="filter-btn" data-category="temoignages">Témoignages</button>
+                    <button class="filter-btn" data-category="communaute">Communauté</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-content">
+            <div class="container">
+                <div class="news-grid">
+                    <!-- Les articles seront injectés ici via JavaScript -->
+                </div>
+                <div class="pagination">
+                    <button class="prev-btn" disabled>Précédent</button>
+                    <div class="page-numbers">
+                        <!-- Les numéros de page seront injectés ici -->
+                    </div>
+                    <button class="next-btn">Suivant</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Restez informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ESPOIR</h3>
+                <p>Ensemble pour la Solidarité, la Promotion, et l'Opportunité des Initiatives de la Relève</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="shop.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: contact@espoir.org</li>
+                    <li>Téléphone: +123 456 789</li>
+                    <li>Adresse: 123 Rue de l'Espoir</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/news.js"></script>
+</body>
+</html>

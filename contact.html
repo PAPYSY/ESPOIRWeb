@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ESPOIR</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="src/logo.jpg" alt="ESPOIR Logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="shop.html">Boutique</a>
+                <a href="news.html">Actualités</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1>Contactez-nous</h1>
+                <p>Nous sommes à votre écoute pour toute question ou suggestion</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="icon">📞</div>
+                        <h3>Téléphone</h3>
+                        <p>(+221) 77175 88 95/ 77 668 92 38</p>
+                        <p>Lun-Ven: 9h-18h</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>contactEspoir.org221@gmail.com</p>
+                        <p>Espoir.org221@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">📍</div>
+                        <h3>Adresse</h3>
+                        <p>Point-E</p>
+                        <p> Dakar,Sénégal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-map-wrapper">
+                    <div class="contact-form-container">
+                        <h2>Envoyez-nous un message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="consent" required>
+                                    J'accepte que mes données soient traitées conformément à la politique de confidentialité
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        </form>
+                    </div>
+                    <div class="map-container">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Comment puis-je faire un don ?</h3>
+                        <p>Vous pouvez faire un don directement sur notre site via la page "Faire un don" ou nous contacter pour plus d'informations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment devenir bénévole ?</h3>
+                        <p>Remplissez notre formulaire de bénévolat en ligne ou contactez-nous directement pour discuter des opportunités disponibles.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quels sont vos horaires d'ouverture ?</h3>
+                        <p>Nos bureaux sont ouverts du lundi au vendredi de 9h à 18h. Nous sommes fermés les week-ends et jours fériés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ESPOIR</h3>
+                <p>Ensemble pour la Solidarité, la Promotion, et l'Opportunité des Initiatives de la Relève</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="shop.html">Boutique</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: Espoir.org221@gmail.com</li>
+                    <li>Téléphone: (+221) 77175 88 95/ 77 668 92 38</li>
+                    <li>Adresse: 123 Rue de l'Espoir</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

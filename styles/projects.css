@@ -1,0 +1,165 @@
+/* styles/projects.css */
+
+.projects-hero {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../src/projects-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: 80px;
+}
+
+.projects-hero .hero-content {
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.projects-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.projects-hero p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.projects-filter {
+    padding: 2rem 0;
+    background-color: var(--gray);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: var(--white);
+    color: var(--primary-green);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.projects-grid {
+    padding: 4rem 0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-category {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background-color: var(--primary-green);
+    color: var(--white);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.status-bar {
+    flex-grow: 1;
+    height: 8px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.status-progress {
+    height: 100%;
+    background-color: var(--gold);
+    border-radius: 4px;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-gray);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .projects-hero h1 {
+        font-size: 2rem;
+    }
+
+    .projects-hero p {
+        font-size: 1rem;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
